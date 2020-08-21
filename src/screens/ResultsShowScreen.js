@@ -20,6 +20,7 @@ const ResultsShowScreen=({navigation})=>{
             <Text style={styles.title}>{result.name}</Text>
             
             <FlatList
+            horizontal={true}
              data={result.photos}
              keyExtractor={(photo)=>photo}
              renderItem={({item})=>{
